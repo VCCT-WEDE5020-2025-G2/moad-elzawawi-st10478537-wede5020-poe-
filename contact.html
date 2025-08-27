@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Cape Hope Foundation and make secure donations to support underprivileged children in Cape Town. Multiple office locations and donation options available.">
+    <meta name="keywords" content="donate, contact, Cape Hope Foundation, Cape Town donations, secure payment, PayFast">
+    <title>Contact & Donate - Cape Hope Foundation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo-section">
+                <img src="images/cape-hope-logo.png" alt="Cape Hope Foundation Logo" class="logo">
+                <h1>Cape Hope Foundation</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programmes.html">Programmes</a></li>
+                    <li><a href="enquiry.html">Get Involved</a></li>
+                    <li><a href="contact.html" class="active">Contact & Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h2>Contact Us & Make a Donation</h2>
+                <p>Get in touch with us or support our mission through secure online donations</p>
+            </div>
+        </section>
+
+        <!-- Donation Section -->
+        <section id="donate" class="donation-section">
+            <div class="container">
+                <h3>Make a Difference Today</h3>
+                <p>Your donation directly impacts the lives of underprivileged children in Cape Town. Every contribution, no matter the size, helps us provide food security and educational support to those who need it most.</p>
+                
+                <!-- Donation Impact Examples -->
+                <div class="donation-impact">
+                    <h4>Your Impact</h4>
+                    <div class="impact-examples">
+                        <div class="impact-item">
+                            <h5>R50</h5>
+                            <p>Feeds a child for one week</p>
+                        </div>
+                        <div class="impact-item">
+                            <h5>R200</h5>
+                            <p>Provides a complete school uniform</p>
+                        </div>
+                        <div class="impact-item">
+                            <h5>R500</h5>
+                            <p>Supports a child's after-school tutoring for a month</p>
+                        </div>
+                        <div class="impact-item">
+                            <h5>R1,000</h5>
+                            <p>Sponsors educational materials for an entire classroom</p>
+                        </div>
+                        <div class="impact-item">
+                            <h5>R2,500</h5>
+                            <p>Funds a community workshop for 50 parents</p>
+                        </div>
+                        <div class="impact-item">
+                            <h5>R5,000</h5>
+                            <p>Supports all programmes for one child for an entire year</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Online Donation Form -->
+                <div class="donation-form-section">
+                    <h4>Secure Online Donation</h4>
+                    <p>We use PayFast, South Africa's leading payment gateway, to ensure your donation is processed securely.</p>
+                    
+                    <form class="donation-form" id="donationForm">
+                        <div class="donation-type">
+                            <h5>Donation Type</h5>
+                            <div class="donation-frequency">
+                                <div class="frequency-option">
+                                    <input type="radio" id="once-off" name="frequency" value="once-off" checked>
+                                    <label for="once-off">Once-off Donation</label>
+                                </div>
+                                <div class="frequency-option">
+                                    <input type="radio" id="monthly" name="frequency" value="monthly">
+                                    <label for="monthly">Monthly Donation</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="donation-amount">
+                            <h5>Donation Amount</h5>
+                            <div class="amount-options">
+                                <div class="amount-preset">
+                                    <input type="radio" id="amount-50" name="amount" value="50">
+                                    <label for="amount-50">R50</label>
+                                </div>
+                                <div class="amount-preset">
+                                    <input type="radio" id="amount-100" name="amount" value="100">
+                                    <label for="amount-100">R100</label>
+                                </div>
+                                <div class="amount-preset">
+                                    <input type="radio" id="amount-200" name="amount" value="200">
+                                    <label for="amount-200">R200</label>
+                                </div>
+                                <div class="amount-preset">
+                                    <input type="radio" id="amount-500" name="amount" value="500">
+                                    <label for="amount-500">R500</label>
+                                </div>
+                                <div class="amount-preset">
+                                    <input type="radio" id="amount-1000" name="amount" value="1000">
+                                    <label for="amount-1000">R1,000</label>
+                                </div>
+                                <div class="amount-preset">
+                                    <input type="radio" id="amount-custom" name="amount" value="custom">
+                                    <label for="amount-custom">Other Amount</label>
+                                </div>
+                            </div>
+                            
+                            <div class="custom-amount" id="customAmountInput" style="display: none;">
+                                <label for="custom-amount-value">Enter Amount (R)</label>
+                                <input type="number" id="custom-amount-value" name="customAmount" min="10" placeholder="Enter amount">
+                            </div>
+                        </div>
+                        
+                        <div class="programme-designation">
+                            <h5>Designate Your Donation</h5>
+                            <select id="programme" name="programme">
+                                <option value="general">General Fund - Where Most Needed</option>
+                                <option value="feeding">Feeding Schemes Programme</option>
+                                <option value="tutoring">After-School Tutoring Programme</option>
+                                <option value="educational">Educational Support & Resources</option>
+                                <option value="community">Community Events & Workshops</option>
+                                <option value="gardens">Community Gardens Programme</option>
+                                <option value="emergency">Emergency Relief Fund</option>
+                            </select>
+                        </div>
+                        
+                        <div class="donor-info">
+                            <h5>Donor Information</h5>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="donor-name">Full Name *</label>
+                                    <input type="text" id="donor-name" name="donorName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="donor-email">Email Address *</label>
+                                    <input type="email" id="donor-email" name="donorEmail" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="donor-phone">Phone Number</label>
+                                    <input type="tel" id="donor-phone" name="donorPhone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="donor-company">Company/Organisation (Optional)</label>
+                                    <input type="text" id="donor-company" name="donorCompany">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="checkbox-group">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="tax-certificate" name="taxCertificate" checked>
+                                        <label for="tax-certificate">I would like to receive a Section 18A tax certificate</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="donor-updates" name="donorUpdates" checked>
+                                        <label for="donor-updates">Send me updates about how my donation is being used</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="anonymous" name="anonymous">
+                                        <label for="anonymous">I prefer to remain anonymous</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="donation-message">
+                            <label for="donation-note">Personal Message (Optional)</label>
+                            <textarea id="donation-note" name="donationNote" rows="3" placeholder="Leave a message of support or dedication"></textarea>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn-primary btn-large">Donate Now - Secure Payment</button>
+                            <p class="security-note">🔒 Your payment is secured with 256-bit SSL encryption via PayFast</p>
+                            <p class="tax-note">Cape Hope Foundation is a registered Non-Profit Organisation (NPO 123-456). All donations are tax deductible under Section 18A.</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Alternative Donation Methods -->
+                <div class="alternative-donations">
+                    <h4>Other Ways to Donate</h4>
+                    <div class="donation-methods">
+                        <div class="donation-method">
+                            <h5>Bank Transfer</h5>
+                            <div class="bank-details">
+                                <p><strong>Account Name:</strong> Cape Hope Foundation</p>
+                                <p><strong>Bank:</strong> Standard Bank</p>
+                                <p><strong>Account Number:</strong> 12345678901</p>
+                                <p><strong>Branch Code:</strong> 051001</p>
+                                <p><strong>Reference:</strong> Your name + "Donation"</p>
+                            </div>
+                            <p class="method-note">Please email proof of payment to finance@capehopefoundation.org.za</p>
+                        </div>
+                        
+                        <div class="donation-method">
+                            <h5>Physical Donations</h5>
+                            <p>We accept donations of:</p>
+                            <ul>
+                                <li>School uniforms and supplies</li>
+                                <li>Non-perishable food items</li>
+                                <li>Books and educational materials</li>
+                                <li>Computers and tablets (working condition)</li>
+                                <li>Garden supplies and tools</li>
+                            </ul>
+                            <p class="method-note">Contact us to arrange drop-off or collection</p>
+                        </div>
